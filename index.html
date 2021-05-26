@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <main class="content">
+    <div class="articles">
+      <div>
+        <img src="images/man-hiking-gold.png" id="img1" alt="">
+        <div>
+          <h3 class="tit" id="brand1">Hiking Jacket</h3>
+          <h4 id="price1">19.90</h4>
+          <h4>$</h4>
+        </div>
+        <div class="inputs">
+          <input type="number" id="quantity1" name="quantity1" min="1" max="99" value="1">
+          <select name="size1" id="size1" onclick="deleteE('message1')">
+            <option value="size" disabled selected>Size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <div>
+            <button class="addTo" onclick="add(1)">Add</button>
+          </div>
+        </div>
+        <p id="message1" class="messageError"></p>
+      </div>
+      <div>
+        <img src="images/skiing-Recovered.png" id="img2" alt="">
+        <div>
+          <h3 class="tit" id="brand2">Ski Jacket</h3>
+          <h4 id="price2">19.90</h4>
+          <h4>$</h4>
+        </div>
+        <div class="inputs">
+          <input type="number" id="quantity2" name="quantity2" min="1" max="99" value="1">
+          <select name="size2" id="size2" onclick="deleteE('message2')">
+            <option value="size" disabled selected> Size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <div>
+            <button class="addTo" onclick="add(2)">Add</button>
+          </div>
+        </div>
+        <p id="message2" class="messageError"></p>
+      </div>
+      <div>
+        <img src="images/man-hiking-green.png"  id="img3" alt="">
+        <div>
+          <h3 class="tit" id="brand3">Hiking Jacket</h3>
+          <h4 id="price3">10.90</h4>
+          <h4>$</h4>
+        </div>
+        <div class="inputs">
+          <input type="number" id="quantity3" name="quantity3" min="1" max="99" value="1">
+          <select name="size3" id="size3" onclick="deleteE('message3')">
+            <option value= "size" disabled selected>Size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+          <div>
+            <button class="addTo" onclick="add(3)">Add</button>
+          </div>
+        </div>
+        <p id="message3" class="messageError"></p>
+      </div>
+    </div>
+    <div class="cart">
+      <h3 class="tit">My articles</h3>
+      <ul id="items"></ul>
+      <h3 id="total">Total: 0$</h3>
+      <a href="checkout.html" class="checkOut-button">Checkout</a>
+    </div>
+  </main>
+  <script src="JS/script.js"></script>
+</body>
+</html>
